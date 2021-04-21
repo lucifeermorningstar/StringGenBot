@@ -6,6 +6,7 @@ from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from StringGen.dyrogram import devil as app
 from StringGen.StringGenerator import ALL_MODULES
+from StringGen.StrungGenerator import MOD_LOAD, MOD_NOLOAD
 from math import ceil
 from pyrogram.types import InlineKeyboardButton
 
@@ -91,7 +92,8 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
 
     return pairs
 
-
+def is_module_loaded(name):
+    return (not MOD_LOAD or name in MOD_LOAD) and name not in MOD_NOLOAD
 
 
 async def start_bot():
@@ -303,3 +305,6 @@ async def help_button(client, query):
 if __name__ == "__main__":
     uvloop.install()
     loop.run_until_complete(start_bot())
+
+
+
