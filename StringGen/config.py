@@ -13,5 +13,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 BOT_NAME = os.environ.get("BOT_NAME") 
 
+PORT = os.environ.get("PORT") 
+
 COMMAND_PREFIXES = os.environ.get("COMMAND_PREFIXES") 
 
