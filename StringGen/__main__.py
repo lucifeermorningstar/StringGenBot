@@ -6,7 +6,7 @@ from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from StringGen.dyrogram import devil as app
 from StringGen.StringGenerator import ALL_MODULES
-from StringGen.StrungGenerator import MOD_LOAD, MOD_NOLOAD
+from StringGen.StringGenerator import MOD_LOAD, MOD_NOLOAD
 from math import ceil
 from pyrogram.types import InlineKeyboardButton
 
